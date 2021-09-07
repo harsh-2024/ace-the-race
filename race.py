@@ -1,11 +1,12 @@
 from turtle import Turtle, Screen
 import random
+
 my_screen = Screen()
 colors = ["red", "blue", "cyan", "purple", "magenta", "yellow"]
+
 my_screen.setup(height=500, width=600)
 user_bet = my_screen.textinput(title="User Bet", prompt=f" Which turtle is going to win? Choose any one color from {colors}: ")
 my_screen.title("Turtle race")
-
 
 all_turtles = []
 
