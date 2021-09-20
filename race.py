@@ -19,6 +19,7 @@ if user_bet:
 for turtle_index in range(0,6):
     timmy = Turtle(shape="turtle")
     timmy.penup()
+    timmy.speed("slowest")
     timmy.color(colors[turtle_index])
     timmy.goto(x=-290, y=0+(turtle_index*30))
     all_turtles.append(timmy)
@@ -27,6 +28,7 @@ for turtle_index in range(0,6):
 while is_race_on:
     pace = random.randint(0,10)
     member = random.randint(0,5)
+
     all_turtles[member].forward(pace*5)
     if all_turtles[member].xcor() > 270:
         is_race_on = False
